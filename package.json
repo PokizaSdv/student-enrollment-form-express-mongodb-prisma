@@ -1,0 +1,31 @@
+{
+    "name": "student-enrollment-form-express-mongodb-prisma",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start:dev": "nodemon src/index.js",
+        "prisma:g": "npx prisma generate --schema=./src/prisma/schema.prisma",
+        "db:p": "npx prisma db push --schema=./src/prisma/schema.prisma"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PokizaSdv/student-enrollment-form-express-mongodb-prisma.git"
+    },
+    "author": "pokiza",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/PokizaSdv/student-enrollment-form-express-mongodb-prisma/issues"
+    },
+    "homepage": "https://github.com/PokizaSdv/student-enrollment-form-express-mongodb-prisma#readme",
+    "devDependencies": {
+        "prisma": "^5.7.1"
+    },
+    "dependencies": {
+        "@prisma/client": "^5.7.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2"
+    },
+    "type": "module"
+}
