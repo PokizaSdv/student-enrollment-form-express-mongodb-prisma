@@ -2,7 +2,6 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import { prisma } from "./prisma/index.js";
-import { empty } from "@prisma/client/runtime/library.js";
 
 dotenv.config();
 
@@ -10,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3000;
 
 app.get("/health", (req, res) => {
     res.status(200).json("Success");
